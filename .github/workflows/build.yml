@@ -36,8 +36,8 @@ jobs:
             USE_PYTHON_3: ON
             buildType: Release
             buildTests: 'ON'
-    runs-on: ubuntu-18.04
-    name: 'Ubuntu 18.04 NVIDIA Pre-built Binaries
+    runs-on: ubuntu-20.04
+    name: 'Ubuntu 20.04 NVIDIA Pre-built Binaries
       <USD Version=${{ matrix.usdVersion }},
        Python Version=${{ matrix.pythonVersion }},
        Build type:${{ matrix.buildType }},
@@ -148,7 +148,7 @@ jobs:
 
   # Run automated code formatting checks.
   code-formatting-check:
-    runs-on: ubuntu-18.04 
+    runs-on: ubuntu-20.04
     steps:
       - name: Install dependencies (Linux)
         run: |
